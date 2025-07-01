@@ -1,63 +1,72 @@
-# CliPress - SSH Center
+=== CliPress ===
 
-Run basic WP-CLI commands securely from the WordPress admin dashboard.
+Contributors: raoufsaada88, ITRSConsulting
+Donate link: https://www.itrsconsulting.com/donate
+Tags: wp-cli, command line, admin, developer, tools
+Requires at least: 5.0
+Tested up to: 6.3
+Requires PHP: 8.0
+Stable tag: 1.1.1
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
----
+Run basic WP-CLI commands directly from your WordPress admin dashboard with secure role-based access and command logging.
 
-## Description
+== Description ==
 
-CliPress allows WordPress administrators to execute basic WP-CLI commands directly from the wp-admin area without needing SSH access to the server. It includes security restrictions to only allow commands starting with `wp`, role-based access control (administrators only), and logs all commands with timestamps and user IDs for audit purposes.
+CliPress allows WordPress administrators to run basic WP-CLI commands securely from the wp-admin area without needing SSH access. It provides a user-friendly interface, command logging, and restricts commands for safety.
 
----
+* Run WP-CLI commands starting with "wp "
+* Administrator-only access
+* Command output shown immediately
+* Logs command history with user and timestamp
+* Simple, native WordPress admin UI with dashicons
 
-## Features
+== Installation ==
 
-- Execute WP-CLI commands securely via a simple admin interface.  
-- Restricts commands to those starting with `wp` for safety.  
-- Command history log with timestamps and user info.  
-- Styled cleanly using WordPress admin styles and dashicons.  
-- Lightweight, no external dependencies.
+1. Upload the `clipress` folder to the `/wp-content/plugins/` directory.
+2. Activate the plugin through the ‘Plugins’ menu in WordPress.
+3. Access CliPress from the WordPress admin menu.
 
----
+== Frequently Asked Questions ==
 
-## Installation
+= Is CliPress free to use? =
 
-1. Download or clone this repository.  
-2. Upload the `clipress` folder to your WordPress `wp-content/plugins/` directory.  
-3. Activate the plugin through the 'Plugins' menu in WordPress.  
-4. Access CliPress from the admin sidebar.
+Yes! CliPress is 100% free and open source under the GPLv2 or later license. Anyone can use it, improve it, and contribute back.
 
----
+= Who can run commands? =
 
-## Usage
+Only WordPress users with the Administrator role can run commands.
 
-- Navigate to the **CliPress** menu in the WordPress admin.  
-- Enter a WP-CLI command in the text area (e.g., `wp plugin list`).  
-- Click **Run Command** to execute.  
-- View the output and recent command history on the page.
+= What commands can I run? =
 
----
+Only WP-CLI commands that start with `wp ` are allowed for security reasons.
 
-## Requirements
+== Screenshots ==
 
-- WordPress 5.0+  
-- PHP 7.4+ (recommended PHP 8.x)  
-- Administrator user role to access the plugin
+1. CliPress admin page with command input.
+2. Command output displayed below.
+3. Command history log table.
 
----
+== Changelog ==
 
-## Security
+= 1.1.1 =
+* Improved security and WordPress.org compliance.
+* Added license info and usage guidelines.
 
-This plugin restricts command execution to only those starting with `wp` and limits access to administrators. However, running shell commands via PHP carries risks, so use cautiously and only on trusted environments.
+= 1.1 =
+* Initial public release.
 
----
+== Upgrade Notice ==
 
-## License
+= 1.1.1 =
+Security improvements; recommended update for all users.
 
-MIT License — see the LICENSE file for details.
+== License ==
 
----
+This plugin is licensed under the GPLv2 or later license. See [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html) for details.
 
-## Author
+== Credits ==
 
-ITRS Consulting — [https://www.itrsconsulting.com](https://www.itrsconsulting.com)
+Developed by ITRS Consulting.
+
